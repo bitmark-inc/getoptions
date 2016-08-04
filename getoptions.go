@@ -15,7 +15,7 @@ type optionType int
 
 // argument requirements
 const (
-	NO_ARGUMENT = optionType(iota)
+	NO_ARGUMENT       = optionType(iota)
 	REQUIRED_ARGUMENT = optionType(iota)
 	OPTIONAL_ARGUMENT = optionType(iota)
 )
@@ -30,7 +30,6 @@ type Option struct {
 // returned options, the Long name is used in this map
 // repeated option values are returned as a string slice
 type OptionsMap map[string][]string
-
 
 // error strings
 const (
