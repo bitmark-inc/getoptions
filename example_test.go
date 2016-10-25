@@ -13,9 +13,9 @@ func ExampleGetopt() {
 
 	// define options
 	flags := []getoptions.Option{
-		{"help", getoptions.NO_ARGUMENT, 'h'},
-		{"output", getoptions.REQUIRED_ARGUMENT, 'o'},
-		{"verbose", getoptions.NO_ARGUMENT, 'v'},
+		{Long: "help", HasArg: getoptions.NO_ARGUMENT, Short: 'h'},
+		{Long: "output", HasArg: getoptions.REQUIRED_ARGUMENT, Short: 'o'},
+		{Long: "verbose", HasArg: getoptions.NO_ARGUMENT, Short: 'v'},
 	}
 
 	// simulated command-line arguments

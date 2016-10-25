@@ -19,11 +19,11 @@ type testItem struct {
 func TestGetOptions(t *testing.T) {
 
 	flags := []getoptions.Option{
-		{"verbose", getoptions.NO_ARGUMENT, 'v'},
-		{"hello", getoptions.REQUIRED_ARGUMENT, 'H'},
-		{"say", getoptions.REQUIRED_ARGUMENT, 's'},
-		{"xyz", getoptions.NO_ARGUMENT, 'x'},
-		{"test", getoptions.OPTIONAL_ARGUMENT, 't'},
+		{Long: "verbose", HasArg: getoptions.NO_ARGUMENT, Short: 'v'},
+		{Long: "hello", HasArg: getoptions.REQUIRED_ARGUMENT, Short: 'H'},
+		{Long: "say", HasArg: getoptions.REQUIRED_ARGUMENT, Short: 's'},
+		{Long: "xyz", HasArg: getoptions.NO_ARGUMENT, Short: 'x'},
+		{Long: "test", HasArg: getoptions.OPTIONAL_ARGUMENT, Short: 't'},
 	}
 
 	tests := []testItem{
