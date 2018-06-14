@@ -6,6 +6,7 @@ package getoptions_test
 
 import (
 	"fmt"
+
 	"github.com/bitmark-inc/getoptions"
 )
 

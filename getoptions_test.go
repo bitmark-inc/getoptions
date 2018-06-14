@@ -5,9 +5,10 @@
 package getoptions_test
 
 import (
-	"github.com/bitmark-inc/getoptions"
 	"reflect"
 	"testing"
+
+	"github.com/bitmark-inc/getoptions"
 )
 
 type testItem struct {
